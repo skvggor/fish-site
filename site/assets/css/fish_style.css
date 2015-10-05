@@ -27,6 +27,45 @@ body.gradient_body {
 	background-attachment: fixed;
 }
 
+.jumbotron {
+	display: inline-block;
+	margin: 35px auto 0;
+	text-align: center;
+}
+
+.jumbotron .jumbotron-text,
+.jumbotron .jumbotron-image {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.jumbotron .jumbotron-text {
+	margin-bottom: 35px;
+	max-width: 450px;
+}
+
+@media screen and (min-width: 850px) {
+	.jumbotron {
+		width: 100%;
+	}
+
+	.jumbotron .jumbotron-text {
+		float: left;
+		margin-bottom: 0;
+		text-align: left;
+	}
+
+	.jumbotron .jumbotron-text,
+	.jumbotron .jumbotron-image {
+		width: auto;
+	}
+
+	.jumbotron-image {
+		float: right;
+	}
+}
+
 .container-narrow > hr {
 	margin: 20px 0;
 }
@@ -39,11 +78,6 @@ body.gradient_body {
 	left: 15px;
 	bottom: 15px;
 	margin-left: -100%;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-	margin: 36px 0;
 }
 
 .jumbotron h1 {
@@ -168,7 +202,7 @@ body.gradient_body {
 }
 
 .container-narrow {
-	width: 850px;
+	max-width: 850px;
 }
 
 .container-wide {
